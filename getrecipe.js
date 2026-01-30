@@ -1,5 +1,4 @@
 export const getrecipecard = ( recipes, parentElement, createElement) =>{
-    console.log(recipes);
     for(let recipe of recipes){
         //parent
         const cardContainer = createElement("div");
