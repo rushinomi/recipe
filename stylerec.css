@@ -1,0 +1,59 @@
+@import url("./reset.css");
+@import url("utility.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+
+.body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8f8f8;
+    overflow-x: hidden;}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    width: 100vw;
+    background-color: #f8f8f8;
+    padding: 1rem 5rem 1rem 3rem;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+.input {
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid ;
+    padding: 8px 8px 8px 40px;
+    font-size: 20px;
+    width: 400px;
+}
+.input:focus {
+    outline: none;
+}
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 10px;
+}
+.card-image {
+    width: 39vw;
+    height: 39vw;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* .card-image-container {
+    width: 39vw;
+    height: 39vw;
+    overflow: hidden;
+    display: flex;
+    gap: 10vw;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+     */

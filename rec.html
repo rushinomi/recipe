@@ -11,14 +11,14 @@
         <h1 class="head-1">
             <a href="/" >RECIPE APP</a>
         </h1>
-        <div class="search bar">
-            <input class= "search" type="text" placeholder="Search recipes...">
-            
+        <div class="search-container">
+            <input class= "input" type="text" placeholder="Search recipes...">
+            <span class="search-icon material-icons-outlined">search</span>
         </div>
     </header>
-    <div class="container">
-        <aside class="filter"></aside>
-        <main class="main"></main>
+    <div class="main-container d-flex gap-large">
+        <aside class="cuisine-filter d-flex d-flex-direction-column"></aside>
+        <main class="main d-flex wrap-items"></main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type= "module" src="rec.js"></script>
