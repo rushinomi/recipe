@@ -1,3 +1,5 @@
+
+
 export const getrecipecard = ( recipes, parentElement, createElement) =>{
     for(let recipe of recipes){
         //parent
@@ -40,15 +42,19 @@ const imageelement = createElement("img");
     ratingElement.appendChild(ratingValueElement);
     cardratingdurationcontainer.appendChild(ratingElement);
   
-    //duration
+    //duration (show timer icon instead of ID text)
     const lengthElement = createElement("div");
     lengthElement.classList.add("star-rating");
     const ratingiconelement = createElement("span");
     ratingiconelement.classList.add("time", "material-symbols-outlined");
     ratingiconelement.innerText = "timer";
     lengthElement.appendChild(ratingiconelement);
+    // const durationIcon = createElement("span");
+    // durationIcon.classList.add("material-symbols-outlined");
+    // durationIcon.innerText = "timer";
+    // lengthElement.appendChild(durationIcon);  
     const duration = createElement("span");
-    duration.innerText = `ID: ${recipe.idMeal}`;
+
     lengthElement.appendChild(duration);
     cardratingdurationcontainer.appendChild(lengthElement);
     carddetailscontainer.appendChild(cardratingdurationcontainer);
@@ -56,4 +62,3 @@ const imageelement = createElement("img");
     parentElement.appendChild(cardContainer);
     }
 };
-

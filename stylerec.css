@@ -40,20 +40,32 @@
     top: 10px;
 }
 .card-image {
-    width: 39vw;
-    height: 39vw;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
-/* .card-image-container {
-    width: 39vw;
-    height: 39vw;
+
+.cuisine-label {
+    font-size: 1.2rem;
+     cursor: pointer;
+}
+
+.card-image-container {
+    /* width: 39vw;
+    height: 39vw; */
     overflow: hidden;
     display: flex;
     gap: 10vw;
-    border-top-left-radius: 8px;
+     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    
+}
+.card{
+    background-color: rgb(236, 228, 222);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-     */
+    
