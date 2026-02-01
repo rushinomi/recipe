@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App</title>
     <link rel="stylesheet" href="stylerec.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header class="header">
         <h1 class="head-1">
-            <a href="/" >RECIPE APP</a>
+            <a href="/" style = "text-decoration: none">RECIPE APP</a>
         </h1>
-        <div class="search bar">
-            <input class= "search" type="text" placeholder="Search recipes...">
-            
-        </div>
+        <div class="search-container">
+            <input class= "input" type="text" placeholder="Search recipes...">
+            <span class="search-icon material-icons-outlined">search</span>
+        </div> 
     </header>
-    <div class="container">
-        <aside class="filter"></aside>
-        <main class="main"></main>
+    <div class="main-container d-flex gap-large padding-left">
+        <aside class="cuisine-filter d-flex d-flex-direction-column padding-top"></aside>
+        <main class="main d-flex wrap-items padding-top gap-medium"></main>
     </div>
-    <script type= "module" src="rec.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <script type= "module" src="rec.js"></script>
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
  <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script> -->
 </body>
