@@ -19,7 +19,6 @@ export const getcuisinecard = (arrofcuisines, parentElement, createElement) => {
         labeltext.innerText = cuisine.strMeal;
         labeltext.setAttribute("data-id", cuisine.idMeal);
         label.appendChild(labeltext);
-        // label.innerText = cuisine.Cuisine;
         label.setAttribute("data-id", cuisine.idMeal);
 
         cuisinecontainer.appendChild(label);

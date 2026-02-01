@@ -3,9 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 
-.body {
+.head {
+    background-color: #e9dec3;
+}
+body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f8f8f8;
+    background-color: #e9dec3;
     overflow-x: hidden;}
 
 .header {
@@ -14,7 +17,7 @@
     position: fixed;
     z-index: 3;
     width: 100vw;
-    background-color: #f8f8f8;
+    background-color: #e9dec3;
     padding: 1rem 5rem 1rem 3rem;
 }
 .search-container {
@@ -54,18 +57,33 @@
 
 .card-image-container {
     /* width: 39vw;
-    height: 39vw; */
+    height:39vw; */
     overflow: hidden;
     display: flex;
     gap: 10vw;
-     border-top-left-radius: 8px;
+    border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     
 }
 .card{
-    background-color: rgb(236, 228, 222);
+    background-color:#e9dec3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    overflow: hidden;
+}
+.filter {
+    background-color: #e9dec3;
+}
+.card-title {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
 }
 
+.card-details{
+    padding: 0.5rem;
+}
     
