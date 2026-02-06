@@ -123,7 +123,8 @@ cuisineList.forEach(cuisine => {
 });
 
 cardparentcontainer.addEventListener("click", (event) => {
-    const cardid = event.target.dataset.idMeal;
+    const cardid = event.target.dataset.id;
+    console.log(cardid);
     if(cardid){
         localStorage.clear();
         localStorage.setItem("id", cardid);
