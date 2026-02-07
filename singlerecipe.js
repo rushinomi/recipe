@@ -1,14 +1,45 @@
-const cardid = localStorage.getItem("id"); 
+// const cardid = localStorage.getItem("id");
+
+// const singlerecipebaseCuisineURL = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${cardid}`;
+
+// const getMultipleCuisineRecipes = async () => {
+//     try {
+//         let recipes = [];
+        
+//         for (let cuisine of cuisineList) {
+//             const url = `${baseCuisineURL}${cuisine}`;
+//             const { data } = await axios.get(url);
+//             if (data.meals) {
+//                 // Add cuisine info to each meal
+//                 data.meals.forEach(meal => {
+//                     meal.strArea = cuisine; // Store the cuisine name
+//                 });
+//                 recipes = [...recipes, ...data.meals];
+//             }
+//         }
+//         return recipes;.
+//     }
+//     catch (error) {
+//         console.log(error);
+//         return [];
+//     }
+// };
+
+// const singlerecipes = await getMultipleCuisineRecipes(singlerecipebaseCuisineURL);
+// console.log(singlerecipes);
+
+const cardid = localStorage.getItem("id"); // Your stored meal ID
 const recipeURL = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${cardid}`;
 
 const fetchRecipeWithIngredients = async () => {
     try {
         const { data } = await axios.get(recipeURL);
-        const meal = data.meals[0]; 
+        const meal = data.meals[0];
         
         console.log("Meal:", meal.strMeal); 
         console.log("Instructions:", meal.strInstructions); 
         
+
         const ingredients = [];
         for (let i = 1; i <= 20; i++) {
             if (meal[`strIngredient${i}`]) {
@@ -26,14 +57,13 @@ const fetchRecipeWithIngredients = async () => {
     }
 };
 
+
 fetchRecipeWithIngredients();
 
 const displayRecipe = async () => {
     const { meal, ingredients } = await fetchRecipeWithIngredients();
     
-    
     const mainContainer = document.querySelector("body") || document.body;
-    
     
     const recipeHTML = `
         <div style="max-width: 800px; margin: 20px auto; padding: 20px;">
