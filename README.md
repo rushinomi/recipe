@@ -1,1 +1,1 @@
-# recipe
+# first project using an online api "themealdb" <br> used ai help in fetching singlerecipe, as the api is of free version, not able to access to cuisines and recipes by a url, <br> currently learning to build api, will modify the project once api is built
