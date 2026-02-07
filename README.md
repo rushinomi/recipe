@@ -1,1 +1,1 @@
-# recipe
+# first project including an online api "themealdb" <br>.used help of AI in getting recipe card, as the url has the premium access, <br> I had to use the free version to build this <br>currently learning to build own api, will modify the project as soon as own api is built
